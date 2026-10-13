@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Alham Manazil is a web developer and IT staff in Indonesia, building web apps and internal tools with PHP, Laravel, JavaScript and MySQL.">
+    <meta name="theme-color" content="#090b12">
+    <link rel="icon" href="/favicon.ico">
+    <title>Alham Manazil | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Page skeleton: plain HTML/CSS so it paints before any JavaScript arrives.
+         Vue replaces everything inside #app when it mounts. -->
+    <style>
+      html, body { margin: 0; background: #090b12; }
+      .sk-wrap { max-width: 64rem; margin: 0 auto; padding: 0 1.25rem; }
+      .sk {
+        background: linear-gradient(100deg, #12151e 30%, #1b2030 50%, #12151e 70%);
+        background-size: 200% 100%;
+        animation: sk-shimmer 1.4s ease-in-out infinite;
+        border-radius: 10px;
+      }
+      @keyframes sk-shimmer { from { background-position: 100% 0; } to { background-position: -100% 0; } }
+      .sk-nav { height: 56px; border-bottom: 1px solid rgba(255,255,255,.05); display: flex; align-items: center; justify-content: space-between; }
+      .sk-hero { text-align: center; padding: 64px 0 40px; display: flex; flex-direction: column; align-items: center; gap: 18px; }
+      .sk-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 24px 0 64px; }
+      .sk-grid .sk { aspect-ratio: 16 / 10; border-radius: 12px; }
+      @media (min-width: 768px) { .sk-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; } .sk-hero { padding-top: 96px; } }
+      .sk-status { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); font: 500 12px/1 system-ui, sans-serif; color: #94a3b8; background: rgba(13,16,25,.92); border: 1px solid rgba(255,255,255,.1); padding: 9px 14px; border-radius: 999px; display: flex; gap: 8px; align-items: center; }
+      .sk-status i { width: 7px; height: 7px; border-radius: 50%; background: #fcd34d; animation: sk-pulse 1s ease-in-out infinite; }
+      @keyframes sk-pulse { 50% { opacity: .25; } }
+      @media (prefers-reduced-motion: reduce) { .sk, .sk-status i { animation: none; } }
+    </style>
+    <noscript><style>.sk-status, .sk-wrap { display: none; }</style></noscript>
+  </head>
+  <body>
+    <noscript>
+      <p style="color:#cbd5e1;font-family:system-ui,sans-serif;padding:2rem;text-align:center">
+        This site needs JavaScript enabled to work properly.
+      </p>
+    </noscript>
+    <div id="app">
+      <div class="sk-wrap" aria-hidden="true">
+        <div class="sk-nav">
+          <div class="sk" style="width:120px;height:24px"></div>
+          <div class="sk" style="width:200px;height:16px"></div>
+        </div>
+        <div class="sk-hero">
+          <div class="sk" style="width:220px;height:30px;border-radius:999px"></div>
+          <div class="sk" style="width:min(520px,90%);height:56px"></div>
+          <div class="sk" style="width:min(440px,80%);height:18px"></div>
+          <div class="sk" style="width:min(360px,70%);height:18px"></div>
+          <div style="display:flex;gap:12px;margin-top:6px">
+            <div class="sk" style="width:150px;height:42px;border-radius:12px"></div>
+            <div class="sk" style="width:120px;height:42px;border-radius:12px"></div>
+          </div>
+          <div class="sk" style="width:min(672px,100%);height:260px;margin-top:36px;border-radius:16px"></div>
+        </div>
+        <div class="sk-grid">
+          <div class="sk"></div><div class="sk"></div><div class="sk"></div>
+          <div class="sk"></div><div class="sk"></div><div class="sk"></div>
+        </div>
+      </div>
+      <div class="sk-status" role="status"><i></i>Loading…</div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

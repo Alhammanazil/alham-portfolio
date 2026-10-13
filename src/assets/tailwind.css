@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4.5rem;
+    background: #090b12;
+  }
+  body {
+    @apply bg-[#090b12] text-neutral-200 antialiased;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+  ::selection {
+    @apply bg-amber-300 text-neutral-900;
+  }
+}
+
+@layer components {
+  .kicker {
+    @apply flex items-center gap-3 text-sm font-medium text-amber-300;
+  }
+  .kicker::before {
+    content: '';
+    @apply h-px w-6 bg-amber-300/60;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border px-4 py-2.5 text-sm font-semibold transition-colors;
+  }
+  .chip {
+    @apply rounded-md border border-white/10 bg-white/[0.04] px-2.5 py-1 font-mono text-[11px] text-neutral-300;
+  }
+}
+
+/* Shimmering placeholder used while images load (same look as the inline page skeleton) */
+.skeleton {
+  background: linear-gradient(100deg, #12151e 30%, #1b2030 50%, #12151e 70%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+.skeleton.is-failed {
+  animation: none;
+}
+@keyframes shimmer {
+  from { background-position: 100% 0; }
+  to { background-position: -100% 0; }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .skeleton {
+    animation: none;
+  }
+}
