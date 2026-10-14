@@ -39,27 +39,27 @@ export const projects = [
     name: 'Jobless',
     stack: ['Figma', 'HTML', 'CSS'],
     github: 'https://github.com/Alhammanazil/Jobless',
-    demo: 'https://jobless-site.netlify.app/'
+    demo: 'https://jobless-sigma.vercel.app/'
   },
   {
     slug: 'komponenku',
     name: 'Komponenku',
     stack: ['Three.js', 'Vite', 'JavaScript'],
     github: 'https://github.com/Alhammanazil/computer-components-3d',
-    demo: 'https://komponenku.netlify.app'
+    demo: 'https://komponenku.vercel.app'
   },
   {
     slug: 'karhutla',
     name: 'Karhutla',
     stack: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/Alhammanazil/karhutla-web',
-    demo: 'https://karhutla.netlify.app/'
+    demo: 'https://karhutla-ochre.vercel.app/'
   },
   {
     slug: 'lullaby',
     name: 'Lullaby',
     stack: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/Alhammanazil/lullaby',
-    demo: 'https://lullaby-sleep.netlify.app'
+    demo: 'https://lullaby-sleep.vercel.app'
   }
 ]
