@@ -3,6 +3,7 @@ import { ref, computed, nextTick } from 'vue'
 import { projects } from '../data/portfolio'
 import SectionHead from './SectionHead.vue'
 import SkeletonImage from './SkeletonImage.vue'
+import { t } from '../i18n'
 
 const n = projects.length
 
@@ -43,25 +44,25 @@ function onKey(e) {
   <section id="projects" class="border-t border-white/5">
     <div class="mx-auto max-w-5xl px-5 pt-20">
       <SectionHead
-        kicker="Where I contributed"
-        title="Projects I've worked on"
-        lead="Hover to bring them to life, tap one for a closer look."
+        :kicker="t.ui.projects.kicker"
+        :title="t.ui.projects.title"
+        :lead="t.ui.projects.lead"
       />
     </div>
 
-    <div class="marquee pb-20" aria-label="Selected projects">
+    <div class="marquee pb-20" :aria-label="t.ui.projects.stripLabel">
       <ul class="track">
         <li v-for="(p, k) in loop" :key="`${p.slug}-${k}`" class="item" :aria-hidden="k >= n ? 'true' : null">
           <button
             type="button"
             class="tile group relative block w-full overflow-hidden rounded-xl border border-white/10 text-left focus:outline-none focus-visible:border-amber-300 focus-visible:ring-2 focus-visible:ring-amber-300"
             :tabindex="k >= n ? -1 : 0"
-            :aria-label="`Open ${p.name}`"
+            :aria-label="`${t.ui.projects.open} ${p.name}`"
             @click="open(k)"
           >
             <SkeletonImage
               :src="`/img/projects/${p.slug}-thumb.webp`"
-              :alt="k < n ? `${p.name} preview` : ''"
+              :alt="k < n ? `${p.name} ${t.ui.projects.preview}` : ''"
               :width="480"
               :height="300"
               :lazy="k > 3"
@@ -77,7 +78,7 @@ function onKey(e) {
     <dialog
       ref="dialog"
       class="m-auto w-[min(94vw,56rem)] max-h-[92vh] overflow-auto rounded-2xl border border-white/10 bg-[#0d1019] p-0 text-neutral-200 backdrop:bg-black/80 backdrop:backdrop-blur-sm"
-      aria-label="Project details"
+      :aria-label="t.ui.projects.details"
       @click="onBackdrop"
       @close="onClosed"
       @keydown="onKey"
@@ -86,24 +87,24 @@ function onKey(e) {
         <SkeletonImage
           :key="current.slug"
           :src="`/img/projects/${current.slug}-full.webp`"
-          :alt="`${current.name} screenshot`"
+          :alt="`${current.name} ${t.ui.projects.screenshot}`"
           :width="1200"
           :height="675"
           :lazy="false"
         />
-        <button type="button" class="nav-btn left-3" aria-label="Previous project" @click="step(-1)">‹</button>
-        <button type="button" class="nav-btn right-3" aria-label="Next project" @click="step(1)">›</button>
-        <button type="button" class="absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-black/60 text-lg text-white hover:bg-black/80" aria-label="Close" @click="close">✕</button>
+        <button type="button" class="nav-btn left-3" :aria-label="t.ui.projects.prev" @click="step(-1)">‹</button>
+        <button type="button" class="nav-btn right-3" :aria-label="t.ui.projects.next" @click="step(1)">›</button>
+        <button type="button" class="absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-black/60 text-lg text-white hover:bg-black/80" :aria-label="t.ui.projects.close" @click="close">✕</button>
       </div>
       <div class="p-6">
         <h3 class="text-xl font-semibold text-white">{{ current.name }}</h3>
-        <p class="mt-2 text-sm leading-relaxed text-neutral-400">{{ current.summary }}</p>
+        <p class="mt-2 text-sm leading-relaxed text-neutral-400">{{ t.projectSummaries[current.slug] }}</p>
         <ul class="mt-4 flex flex-wrap gap-1.5">
           <li v-for="s in current.stack" :key="s" class="chip">{{ s }}</li>
         </ul>
         <div class="mt-5 flex flex-wrap gap-3 text-sm">
-          <a :href="current.github" target="_blank" rel="noopener" class="btn border-white/15 py-2 text-neutral-200 hover:bg-white/5">Source code</a>
-          <a v-if="current.demo" :href="current.demo" target="_blank" rel="noopener" class="btn border-amber-300 bg-amber-300 py-2 text-neutral-900 hover:bg-amber-200">Live demo ↗</a>
+          <a :href="current.github" target="_blank" rel="noopener" class="btn border-white/15 py-2 text-neutral-200 hover:bg-white/5">{{ t.ui.projects.source }}</a>
+          <a v-if="current.demo" :href="current.demo" target="_blank" rel="noopener" class="btn border-amber-300 bg-amber-300 py-2 text-neutral-900 hover:bg-amber-200">{{ t.ui.projects.demo }}</a>
         </div>
       </div>
     </dialog>

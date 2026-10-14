@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import './assets/tailwind.css'
+import './i18n'
+import './i18n'
 
 const observer = new IntersectionObserver(
   (entries) => {

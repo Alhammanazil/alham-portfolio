@@ -1,6 +1,7 @@
 <script setup>
 import { profile } from '../data/portfolio'
 import CodeStage from './CodeStage.vue'
+import { t } from '../i18n'
 </script>
 
 <template>
@@ -12,17 +13,17 @@ import CodeStage from './CodeStage.vue'
           <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60"></span>
           <span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
         </span>
-        {{ profile.status }}
+        {{ t.profile.status }}
       </p>
 
       <h1 class="mt-7 text-5xl font-bold tracking-tight sm:text-7xl">
         <span class="bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-transparent">{{ profile.name }}</span>
       </h1>
-      <p class="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-neutral-400">{{ profile.headline }}</p>
+      <p class="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-neutral-400">{{ t.profile.headline }}</p>
 
       <div class="mt-8 flex flex-wrap justify-center gap-3">
-        <a href="#projects" class="btn border-amber-300 bg-amber-300 text-neutral-900 hover:bg-amber-200">See what I've built</a>
-        <a href="#contact" class="btn border-white/15 text-neutral-200 hover:bg-white/5">Get in touch</a>
+        <a href="#projects" class="btn border-amber-300 bg-amber-300 text-neutral-900 hover:bg-amber-200">{{ t.ui.hero.seeWork }}</a>
+        <a href="#contact" class="btn border-white/15 text-neutral-200 hover:bg-white/5">{{ t.ui.hero.contact }}</a>
       </div>
 
       <div class="mt-16">

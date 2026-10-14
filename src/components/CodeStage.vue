@@ -1,13 +1,14 @@
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+import { t } from '../i18n'
 
+// Prompts come from the language files (ui.stage.prompts, same order as the scenes).
 // Decorative, looping "AI pair programmer" animation. Scenes mirror real work:
 // attendance tracking, a donation page and a damage-report query.
 // token classes: k keyword, f function, s string, c comment, p plain
 const scenes = [
   {
     file: 'checkin.js',
-    prompt: 'track staff attendance without fingerprint hardware',
     lines: [
       [['c', '// scan a QR code, log the time']],
       [['k', 'async function '], ['f', 'checkIn'], ['p', '(staffId) {']],
@@ -19,7 +20,6 @@ const scenes = [
   },
   {
     file: 'DonateController.php',
-    prompt: 'show donation progress in real time',
     lines: [
       [['k', '$raised '], ['p', '= Donation::'], ['f', 'sum'], ['p', '('], ['s', "'amount'"], ['p', ');']],
       [['k', '$goal   '], ['p', '= '], ['s', '50000000'], ['p', ';']],
@@ -30,7 +30,6 @@ const scenes = [
   },
   {
     file: 'open_reports.sql',
-    prompt: 'which damage reports are still open?',
     lines: [
       [['k', 'SELECT '], ['p', 'id, title, reported_at']],
       [['k', 'FROM   '], ['p', 'damage_reports']],
@@ -48,7 +47,10 @@ const codeShown = ref(0)
 const phase = ref('prompt') // prompt -> think -> code -> done
 
 const scene = computed(() => scenes[sceneIdx.value])
-const promptText = computed(() => scene.value.prompt.slice(0, promptShown.value))
+const promptOf = (i) => t.value.ui.stage.prompts[i]
+const promptText = computed(() =>
+  phase.value === 'done' ? promptOf(sceneIdx.value) : promptOf(sceneIdx.value).slice(0, promptShown.value)
+)
 
 const codeTotal = (s) => s.lines.reduce((n, l) => n + l.reduce((m, t) => m + t[1].length, 0) + 1, 0)
 
@@ -87,7 +89,7 @@ async function run() {
       phase.value = 'prompt'
       await tick(500)
       const s = scenes[i]
-      while (promptShown.value < s.prompt.length && alive) {
+      while (promptShown.value < promptOf(i).length && alive) {
         promptShown.value++
         await tick(34)
       }
@@ -108,7 +110,6 @@ async function run() {
 
 onMounted(() => {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    promptShown.value = scenes[0].prompt.length
     codeShown.value = codeTotal(scenes[0])
     phase.value = 'done'
     return
@@ -148,7 +149,7 @@ onBeforeUnmount(() => {
       <!-- code -->
       <div class="relative px-4 py-4 font-mono text-[12.5px] leading-[1.7] sm:text-[13px]" :style="{ minHeight: `calc(${LINES} * 1.7em + 2rem)` }">
         <p v-if="phase === 'think'" class="flex items-center gap-2 text-neutral-500">
-          <span class="text-amber-300">✦</span> writing code
+          <span class="text-amber-300">✦</span> {{ t.ui.stage.thinking }}
           <span class="dots"><i></i><i></i><i></i></span>
         </p>
         <div v-for="(line, i) in visibleLines" :key="i" class="flex">
@@ -162,7 +163,7 @@ onBeforeUnmount(() => {
       <!-- status -->
       <div class="flex items-center justify-between border-t border-white/5 px-4 py-2.5 font-mono text-[11px] text-neutral-600">
         <span>{{ scene.file.split('.').pop().toUpperCase() }}</span>
-        <span class="status" :class="{ on: phase === 'done' }">✓ ready to review</span>
+        <span class="status" :class="{ on: phase === 'done' }">{{ t.ui.stage.ready }}</span>
       </div>
     </div>
   </div>
