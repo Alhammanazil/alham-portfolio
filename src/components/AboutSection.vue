@@ -18,7 +18,7 @@ import SectionHead from './SectionHead.vue'
 
       <dl v-reveal class="divide-y divide-white/5 self-start rounded-2xl border border-white/10 bg-white/[0.02]">
         <div v-for="f in t.t.about.facts" :key="f.label" class="px-5 py-4">
-          <dt class="text-xs font-medium uppercase tracking-wider text-neutral-500">{{ f.label }}</dt>
+          <dt class="text-xs font-medium uppercase tracking-wider text-neutral-400">{{ f.label }}</dt>
           <dd class="mt-1 text-sm text-neutral-200">{{ f.value }}</dd>
         </div>
       </dl>

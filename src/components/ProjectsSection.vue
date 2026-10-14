@@ -77,7 +77,7 @@ function onKey(e) {
 
     <dialog
       ref="dialog"
-      class="m-auto w-[min(94vw,56rem)] max-h-[92vh] overflow-auto rounded-2xl border border-white/10 bg-[#0d1019] p-0 text-neutral-200 backdrop:bg-black/80 backdrop:backdrop-blur-sm"
+      class="m-auto w-[min(94vw,56rem)] max-h-[92vh] overflow-auto rounded-2xl border border-white/10 bg-[#0d1019] p-0 text-neutral-200 backdrop:bg-black/80"
       :aria-label="t.ui.projects.details"
       @click="onBackdrop"
       @close="onClosed"
@@ -143,7 +143,7 @@ function onKey(e) {
 /* ---- tiles: dark by default, colour + yellow on hover ---- */
 .tile {
   background: #05060a;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 .tile :deep(img) {
   filter: grayscale(1) brightness(0.42) contrast(1.05);
@@ -158,7 +158,6 @@ function onKey(e) {
 .tile:hover,
 .tile:focus-visible {
   border-color: #fcd34d;
-  box-shadow: 0 0 0 1px rgba(252, 211, 77, 0.5), 0 12px 40px -12px rgba(252, 211, 77, 0.35);
 }
 .tile:hover :deep(img),
 .tile:focus-visible :deep(img) {

@@ -9,27 +9,18 @@ export default {
     language: 'Bahasa',
     navLabel: 'Utama',
     nav: { about: 'Tentang', experience: 'Pengalaman', projects: 'Proyek', contact: 'Kontak' },
-    hero: { seeWork: 'Lihat karya saya', contact: 'Hubungi saya' },
-    stage: {
-      thinking: 'menulis kode',
-      ready: '✓ siap ditinjau',
-      prompts: [
-        'catat kehadiran staf tanpa mesin sidik jari',
-        'tampilkan progres donasi secara real time',
-        'laporan kerusakan mana yang masih terbuka?'
-      ]
-    },
-    about: { kicker: 'Tentang saya', title: 'Halo, senang berkenalan.' },
+    hero: { seeWork: 'Lihat proyek', contact: 'Hubungi saya' },
+    about: { kicker: 'Tentang', title: 'Web developer dan staf IT di Jakarta' },
     experience: {
-      kicker: 'Tempat saya bekerja',
-      title: 'Perjalanan kerja saya sejauh ini.',
+      kicker: 'Pengalaman',
+      title: 'Tempat saya bekerja',
       education: 'Pendidikan',
       certifications: 'Sertifikasi'
     },
     projects: {
-      kicker: 'Tempat saya berkontribusi',
-      title: 'Proyek yang pernah saya kerjakan',
-      lead: 'Arahkan kursor untuk melihat warnanya, ketuk untuk melihat lebih dekat.',
+      kicker: 'Proyek',
+      title: 'Proyek pilihan',
+      lead: 'Pilih proyek untuk melihat tangkapan layar, teknologi dan tautannya.',
       stripLabel: 'Proyek pilihan',
       open: 'Buka',
       preview: 'pratinjau',
@@ -39,33 +30,33 @@ export default {
       next: 'Proyek berikutnya',
       close: 'Tutup',
       source: 'Kode sumber',
-      demo: 'Demo langsung ↗',
+      demo: 'Demo langsung',
       imageUnavailable: 'Gambar tidak tersedia'
     },
     contact: {
-      kicker: 'Halo',
-      title: 'Punya ide, atau bug yang perlu dibereskan?',
-      lead: 'Kirim pesan, nanti kita cari solusinya bersama.',
+      kicker: 'Kontak',
+      title: 'Kirim pesan kepada saya',
+      lead: 'Saya ada di LinkedIn, dan kode saya ada di GitHub.',
       linkedin: 'Kirim pesan lewat LinkedIn',
-      github: 'Lihat kode saya di GitHub'
+      github: 'Lihat GitHub saya'
     },
-    footer: { top: 'Kembali ke atas ↑' },
+    footer: { top: 'Kembali ke atas' },
     noscript: 'Situs ini membutuhkan JavaScript agar dapat berfungsi dengan baik.'
   },
   profile: {
-    headline: 'Web developer yang suka mengubah alur kerja yang berantakan menjadi perangkat lunak yang rapi.',
-    status: 'Staf IT di PT Primajasa Tunas Mandiri · Jakarta'
+    headline: 'Saya membangun aplikasi web dan alat internal dengan PHP, Laravel dan JavaScript, dan mengganti rutinitas berbasis kertas dan spreadsheet dengan perangkat lunak yang berfungsi.',
+    status: 'Staf IT di PT Primajasa Tunas Mandiri, Jakarta'
   },
   about: {
     paragraphs: [
-      'Halo, saya Alham. Saya lulus dari Teknik Informatika Universitas Muria Kudus pada Oktober 2024 dan sejak itu terus membangun untuk web: pertama sebagai Web & App Developer di Pitucorp, sekarang sebagai Staf IT di PT Primajasa Tunas Mandiri.',
-      'Saya suka sisi praktis dari perangkat lunak: formulir yang benar-benar diisi orang, dasbor yang benar-benar dibaca, dan otomasi kecil yang mengembalikan waktu sore seseorang.'
+      'Saya Alham. Saya lulus dari Teknik Informatika Universitas Muria Kudus pada Oktober 2024. Sejak itu saya bekerja sebagai Web & App Developer di Pitucorp, dan sekarang sebagai Staf IT di PT Primajasa Tunas Mandiri.',
+      'Saya suka sisi praktis dari perangkat lunak: formulir, dasbor dan otomasi kecil yang menghemat satu sore kerja manual seseorang.'
     ],
     facts: [
       { label: 'Fokus', value: 'Aplikasi web, alat internal, dukungan IT' },
       { label: 'Pendidikan', value: 'S.T. Teknik Informatika, Universitas Muria Kudus (IPK 3,83)' },
       { label: 'Alumni', value: 'Bangkit Academy 2023, Cloud Computing' },
-      { label: 'Di luar kerja', value: 'Membaca novel dan nge-gym' }
+      { label: 'Di luar pekerjaan', value: 'Membaca novel dan nge-gym' }
     ]
   },
   experience: [
@@ -76,7 +67,7 @@ export default {
       place: 'Gambir, Jakarta',
       points: [
         'Dukungan IT lini pertama untuk seluruh departemen: permintaan perangkat keras, perangkat lunak, Office, jaringan dan internet.',
-        'Merawat server, perangkat jaringan, basis data, situs web, antivirus dan pencadangan data berkala.',
+        'Memelihara server, perangkat jaringan, basis data, situs web dan antivirus, serta menjalankan pencadangan data berkala.',
         'Membangun dan memelihara aplikasi internal, serta dokumentasi dan pengadaan IT.'
       ]
     },
@@ -108,7 +99,7 @@ export default {
       place: 'Jarak jauh',
       points: [
         'Backend developer pada capstone Jejaknesia, aplikasi rekomendasi wisata: merancang API dan mengintegrasikan model machine learning (Kotlin, Node.js, TensorFlow, Flask).',
-        'Praktik langsung dengan Google Cloud: Compute Engine, Kubernetes, Cloud Run, Cloud Functions, BigQuery, Cloud SQL dan lainnya.'
+        'Bekerja dengan Google Cloud: Compute Engine, Kubernetes, Cloud Run, Cloud Functions, BigQuery dan Cloud SQL.'
       ]
     }
   ],

@@ -9,27 +9,18 @@ export default {
     language: 'Language',
     navLabel: 'Main',
     nav: { about: 'About', experience: 'Experience', projects: 'Projects', contact: 'Contact' },
-    hero: { seeWork: "See what I've built", contact: 'Get in touch' },
-    stage: {
-      thinking: 'writing code',
-      ready: '✓ ready to review',
-      prompts: [
-        'track staff attendance without fingerprint hardware',
-        'show donation progress in real time',
-        'which damage reports are still open?'
-      ]
-    },
-    about: { kicker: 'Who I am', title: 'Hello, nice to meet you.' },
+    hero: { seeWork: 'View projects', contact: 'Contact me' },
+    about: { kicker: 'About', title: 'Web developer and IT staff in Jakarta' },
     experience: {
-      kicker: "Where I've worked",
-      title: 'A short tour of my work so far.',
+      kicker: 'Experience',
+      title: 'Where I have worked',
       education: 'Education',
       certifications: 'Certifications'
     },
     projects: {
-      kicker: 'Where I contributed',
-      title: "Projects I've worked on",
-      lead: 'Hover to bring them to life, tap one for a closer look.',
+      kicker: 'Projects',
+      title: 'Selected projects',
+      lead: 'Select a project for a screenshot, its stack and links.',
       stripLabel: 'Selected projects',
       open: 'Open',
       preview: 'preview',
@@ -39,33 +30,33 @@ export default {
       next: 'Next project',
       close: 'Close',
       source: 'Source code',
-      demo: 'Live demo ↗',
+      demo: 'Live demo',
       imageUnavailable: 'Image unavailable'
     },
     contact: {
-      kicker: 'Say hi',
-      title: 'Got an idea, or a bug that needs squashing?',
-      lead: "Send me a message and we'll see what we can sort out together.",
+      kicker: 'Contact',
+      title: 'Send me a message',
+      lead: 'I am on LinkedIn, and my code is on GitHub.',
       linkedin: 'Message me on LinkedIn',
-      github: 'Browse my code on GitHub'
+      github: 'View my GitHub'
     },
-    footer: { top: 'Back to top ↑' },
+    footer: { top: 'Back to top' },
     noscript: 'This site needs JavaScript enabled to work properly.'
   },
   profile: {
-    headline: 'A web developer who likes turning messy workflows into tidy software.',
-    status: 'IT Staff at PT Primajasa Tunas Mandiri · Jakarta'
+    headline: 'I build web apps and internal tools in PHP, Laravel and JavaScript, and I replace paper and spreadsheet routines with working software.',
+    status: 'IT Staff at PT Primajasa Tunas Mandiri, Jakarta'
   },
   about: {
     paragraphs: [
-      "Hi, I'm Alham. I graduated in Informatics Engineering from Universitas Muria Kudus in October 2024, and I've been building for the web ever since: first as a Web & App Developer at Pitucorp, now as IT Staff at PT Primajasa Tunas Mandiri.",
-      'I like the practical side of software: forms people actually fill in, dashboards people actually read, and small automations that give someone their afternoon back.'
+      "I'm Alham. I graduated in Informatics Engineering from Universitas Muria Kudus in October 2024. Since then I have worked as a Web & App Developer at Pitucorp, and now as IT Staff at PT Primajasa Tunas Mandiri.",
+      'I like the practical side of software: forms, dashboards and small automations that save someone an afternoon of manual work.'
     ],
     facts: [
       { label: 'Focus', value: 'Web apps, internal tools, IT support' },
       { label: 'Education', value: 'B.Eng. Informatics, Universitas Muria Kudus (GPA 3.83)' },
       { label: 'Alumni', value: 'Bangkit Academy 2023, Cloud Computing' },
-      { label: 'Off the clock', value: 'Novels and the gym' }
+      { label: 'Outside work', value: 'Novels and the gym' }
     ]
   },
   experience: [
@@ -76,7 +67,7 @@ export default {
       place: 'Gambir, Jakarta',
       points: [
         'First line of IT support across departments: hardware, software, Office, network and internet requests.',
-        'Look after servers, network devices, databases, websites, antivirus and regular data backups.',
+        'Maintain servers, network devices, databases, websites and antivirus, and run regular data backups.',
         'Build and maintain internal applications, plus IT documentation and procurement.'
       ]
     },
@@ -108,7 +99,7 @@ export default {
       place: 'Remote',
       points: [
         'Backend developer on the Jejaknesia capstone, a tourism recommendation app: designed the APIs and wired in a machine learning model (Kotlin, Node.js, TensorFlow, Flask).',
-        'Hands-on with Google Cloud: Compute Engine, Kubernetes, Cloud Run, Cloud Functions, BigQuery, Cloud SQL and more.'
+        'Worked with Google Cloud: Compute Engine, Kubernetes, Cloud Run, Cloud Functions, BigQuery and Cloud SQL.'
       ]
     }
   ],

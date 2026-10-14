@@ -31,7 +31,7 @@ watch(
 <template>
   <div class="relative h-full w-full overflow-hidden bg-[#12151e]" :style="{ aspectRatio: `${width} / ${height}` }">
     <div v-if="!loaded" class="skeleton absolute inset-0" :class="{ 'is-failed': failed }">
-      <span v-if="failed" class="absolute inset-0 grid place-items-center text-xs text-neutral-500">{{ t.ui.projects.imageUnavailable }}</span>
+      <span v-if="failed" class="absolute inset-0 grid place-items-center text-xs text-neutral-400">{{ t.ui.projects.imageUnavailable }}</span>
     </div>
     <img
       ref="img"

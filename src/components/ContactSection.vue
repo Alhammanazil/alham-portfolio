@@ -10,7 +10,7 @@ import { t } from '../i18n'
       <h2 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-5xl">
         {{ t.ui.contact.title }}
       </h2>
-      <p class="mx-auto mt-4 max-w-md text-neutral-400">
+      <p class="mx-auto mt-4 max-w-md text-neutral-300">
         {{ t.ui.contact.lead }}
       </p>
       <div class="mt-8 flex flex-wrap justify-center gap-3">
