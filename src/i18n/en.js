@@ -123,7 +123,8 @@ export default {
     jejaknesia: 'Mobile app that recommends places to visit in Indonesia. Bangkit capstone, backend and API by me.',
     'garasi-inspeksi': 'Website for a vehicle inspection and maintenance service.',
     jobless: 'Remote job board landing page, sliced from a Figma design.',
-    livewire: 'Learning project: dynamic, real-time interfaces with Laravel Livewire.',
-    'nawa-kartika': 'Graduation announcement system for SD NU Nawa Kartika, with secure login.'
+    komponenku: 'Learn computer parts through interactive 3D models (360° rotate, zoom) and a guess-the-part quiz.',
+    karhutla: 'Bilingual interactive page on the root causes of forest and land fires in Indonesia.',
+    lullaby: 'Unofficial interactive companion to The Power of Sleep: sleep calculators, breathing guides and bedroom checklists.'
   }
 }

@@ -43,17 +43,24 @@ export const projects = [
     demo: 'https://jobless-site.netlify.app/'
   },
   {
-    slug: 'livewire',
-    name: 'Livewire Playground',
-    stack: ['Laravel', 'Livewire', 'Tailwind CSS'],
-    github: 'https://github.com/Alhammanazil/learn-livewire',
-    demo: null
+    slug: 'komponenku',
+    name: 'Komponenku',
+    stack: ['Three.js', 'Vite', 'JavaScript'],
+    github: 'https://github.com/Alhammanazil/computer-components-3d',
+    demo: 'https://komponenku.netlify.app'
   },
   {
-    slug: 'nawa-kartika',
-    name: 'Nawa Kartika',
-    stack: ['Laravel', 'MySQL', 'Bootstrap'],
-    github: 'https://github.com/Alhammanazil/cek_kelulusan_nawakartika',
-    demo: 'https://cek-kelulusan-nawakartika.vercel.app/'
+    slug: 'karhutla',
+    name: 'Karhutla',
+    stack: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/Alhammanazil/karhutla-web',
+    demo: 'https://karhutla.netlify.app/'
+  },
+  {
+    slug: 'lullaby',
+    name: 'Lullaby',
+    stack: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/Alhammanazil/lullaby',
+    demo: 'https://lullaby-sleep.netlify.app'
   }
 ]

@@ -123,7 +123,8 @@ export default {
     jejaknesia: 'Aplikasi seluler yang merekomendasikan tempat wisata di Indonesia. Capstone Bangkit, backend dan API oleh saya.',
     'garasi-inspeksi': 'Situs web untuk layanan inspeksi dan perawatan kendaraan.',
     jobless: 'Landing page bursa kerja jarak jauh, dipotong dari desain Figma.',
-    livewire: 'Proyek belajar: antarmuka dinamis dan real time dengan Laravel Livewire.',
-    'nawa-kartika': 'Sistem pengumuman kelulusan SD NU Nawa Kartika, dengan login aman.'
+    komponenku: 'Belajar komponen komputer lewat model 3D interaktif (putar 360°, zoom) dan kuis tebak komponen.',
+    karhutla: 'Halaman interaktif dua bahasa tentang akar masalah kebakaran hutan dan lahan di Indonesia.',
+    lullaby: 'Pendamping interaktif tidak resmi buku The Power of Sleep: kalkulator tidur, panduan napas, dan daftar periksa kamar tidur.'
   }
 }
