@@ -8,6 +8,9 @@ export default {
   ui: {
     language: 'Language',
     navLabel: 'Main',
+    menu: 'Open menu',
+    closeMenu: 'Close menu',
+    switchTo: 'Switch language',
     nav: { about: 'About', experience: 'Experience', projects: 'Projects', contact: 'Contact' },
     hero: { seeWork: "See what I've built", contact: 'Get in touch' },
     stage: {

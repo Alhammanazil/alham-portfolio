@@ -18,7 +18,7 @@ function initialLang() {
 export const lang = ref(initialLang())
 export const languages = [
   { code: 'id', label: 'ID', name: 'Bahasa Indonesia' },
-  { code: 'en', label: 'EN', name: 'English' }
+  { code: 'en', label: 'ENG', name: 'English' }
 ]
 
 export function setLang(code) {

@@ -8,6 +8,9 @@ export default {
   ui: {
     language: 'Bahasa',
     navLabel: 'Utama',
+    menu: 'Buka menu',
+    closeMenu: 'Tutup menu',
+    switchTo: 'Ganti bahasa',
     nav: { about: 'Tentang', experience: 'Pengalaman', projects: 'Proyek', contact: 'Kontak' },
     hero: { seeWork: 'Lihat karya saya', contact: 'Hubungi saya' },
     stage: {
