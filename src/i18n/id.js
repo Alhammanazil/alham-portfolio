@@ -68,7 +68,7 @@ export default {
       { label: 'Fokus', value: 'Aplikasi web, alat internal, dukungan IT' },
       { label: 'Pendidikan', value: 'S.T. Teknik Informatika, Universitas Muria Kudus (IPK 3,83)' },
       { label: 'Alumni', value: 'Bangkit Academy 2023, Cloud Computing' },
-      { label: 'Di luar kerja', value: 'Membaca novel dan nge-gym' }
+      { label: 'Di luar kerja', value: 'Pecinta film dan gemar membaca' }
     ]
   },
   experience: [

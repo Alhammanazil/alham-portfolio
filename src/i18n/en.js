@@ -61,14 +61,14 @@ export default {
   },
   about: {
     paragraphs: [
-      "Hi, I'm Alham. I graduated in Informatics Engineering from Universitas Muria Kudus in October 2024, and I've been building for the web ever since: first as a Web & App Developer at Pitucorp, now as IT Staff at PT Primajasa Tunas Mandiri.",
+      "Hi, I'm Alham. I graduated in Informatics Engineering from Muria Kudus University in October 2024, and I've been building for the web ever since: first as a Web & App Developer at Pitucorp, now as IT Staff at PT Primajasa Tunas Mandiri.",
       'I like the practical side of software: forms people actually fill in, dashboards people actually read, and small automations that give someone their afternoon back.'
     ],
     facts: [
       { label: 'Focus', value: 'Web apps, internal tools, IT support' },
-      { label: 'Education', value: 'B.Eng. Informatics, Universitas Muria Kudus (GPA 3.83)' },
+      { label: 'Education', value: 'B.Eng. Informatics, Muria Kudus University (GPA 3.83)' },
       { label: 'Alumni', value: 'Bangkit Academy 2023, Cloud Computing' },
-      { label: 'Off the clock', value: 'Novels and the gym' }
+      { label: 'Off the clock', value: 'Cinephile and reading enthusiast' }
     ]
   },
   experience: [
@@ -116,8 +116,8 @@ export default {
     }
   ],
   education: [
-    { school: 'Universitas Muria Kudus', detail: 'Bachelor, Informatics Engineering', period: 'Sep 2020 – Oct 2024' },
-    { school: 'SMA Negeri 2 Kudus', detail: 'Science track', period: '2018 – 2020' }
+    { school: 'Muria Kudus University', detail: 'Bachelor, Informatics Engineering', period: 'Sep 2020 – Oct 2024' },
+    { school: 'State Senior High School 2 Kudus', detail: 'Science track', period: '2018 – 2020' }
   ],
   projectSummaries: {
     jejaknesia: 'Mobile app that recommends places to visit in Indonesia. Bangkit capstone, backend and API by me.',

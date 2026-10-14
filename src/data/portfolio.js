@@ -15,7 +15,6 @@ export const certifications = [
   'Google Cloud Associate Cloud Engineer',
   'Google IT Support Specialization',
   'Google Data Analytics Specialization',
-  'Belajar Laravel',
   'EnglishScore'
 ]
 
