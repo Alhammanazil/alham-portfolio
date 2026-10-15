@@ -43,7 +43,19 @@ export default {
       close: 'Close',
       source: 'Source code',
       demo: 'Live demo ↗',
-      imageUnavailable: 'Image unavailable'
+      imageUnavailable: "Image unavailable",
+      filterLabel: "Filter projects",
+      all: "All",
+      layoutLabel: "Layout",
+      viewStrip: "Strip",
+      viewGrid: "Grid",
+      tabShot: "Screenshot",
+      tabLive: "Live",
+      tabsLabel: "Project view",
+      livePreview: "Live preview of",
+      liveHint: "This is the real site, loaded inside the page. It may look cramped here, so open it in a new tab for the full view.",
+      noMatch: "No projects in this group yet.",
+      tags: { php: "Laravel / PHP", frontend: "Front-end", "3d": "3D", mobile: "Mobile & ML", nocode: "No-code", design: "Design" }
     },
     contact: {
       kicker: 'Say hi',
@@ -120,6 +132,9 @@ export default {
     { school: 'State Senior High School 2 Kudus', detail: 'Science track', period: '2018 – 2020' }
   ],
   projectSummaries: {
+    "cv-ats-generator": "Free, private CV builder that produces ATS-friendly CVs, with a live checker and a learn page on how ATS really works. Runs entirely in the browser, with no accounts and no backend.",
+    "khitan-umum": "Registration and patient-flow system for the Khitan Umum Menara Kudus event (21 September 2024): AppSheet apps plus a custom website with a dashboard covering registration, procedure, anesthesia, follow-up care and medication, synced with MySQL and spreadsheets.",
+    bukaluwur: "Website for the administrators of the Bukaluwur Menara Kudus 1446 H event to record shodaqoh donations (money, goods, livestock and more) and monitor daily receipts.",
     jejaknesia: 'Mobile app that recommends places to visit in Indonesia. Bangkit capstone, backend and API by me.',
     'garasi-inspeksi': 'Website for a vehicle inspection and maintenance service.',
     jobless: 'Remote job board landing page, sliced from a Figma design.',

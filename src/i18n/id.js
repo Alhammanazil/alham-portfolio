@@ -43,7 +43,19 @@ export default {
       close: 'Tutup',
       source: 'Kode sumber',
       demo: 'Demo langsung ↗',
-      imageUnavailable: 'Gambar tidak tersedia'
+      imageUnavailable: "Gambar tidak tersedia",
+      filterLabel: "Saring proyek",
+      all: "Semua",
+      layoutLabel: "Tata letak",
+      viewStrip: "Strip",
+      viewGrid: "Grid",
+      tabShot: "Tangkapan layar",
+      tabLive: "Langsung",
+      tabsLabel: "Tampilan proyek",
+      livePreview: "Pratinjau langsung",
+      liveHint: "Ini situs aslinya yang dimuat di dalam halaman. Tampilannya bisa terasa sempit, jadi buka di tab baru untuk tampilan penuh.",
+      noMatch: "Belum ada proyek di kelompok ini.",
+      tags: { php: "Laravel / PHP", frontend: "Front-end", "3d": "3D", mobile: "Mobile & ML", nocode: "No-code", design: "Desain" }
     },
     contact: {
       kicker: 'Halo',
@@ -120,6 +132,9 @@ export default {
     { school: 'SMA Negeri 2 Kudus', detail: 'Peminatan IPA', period: '2018 – 2020' }
   ],
   projectSummaries: {
+    "cv-ats-generator": "Pembuat CV gratis dan privat yang menghasilkan CV ramah ATS, lengkap dengan pengecek CV dan halaman belajar tentang cara kerja ATS. Berjalan sepenuhnya di browser, tanpa akun dan tanpa backend.",
+    "khitan-umum": "Sistem pendaftaran dan alur peserta untuk acara Khitan Umum Menara Kudus (21 September 2024): aplikasi AppSheet dan website kustom dengan dashboard untuk registrasi, tindakan, anestesi, perawatan lanjutan, dan pembagian obat, terhubung ke MySQL dan spreadsheet.",
+    bukaluwur: "Website bagi pengurus acara Bukaluwur Menara Kudus 1446 H untuk mencatat penerimaan shodaqoh (uang, barang, hewan ternak, dan lainnya) dan memantau penerimaan harian.",
     jejaknesia: 'Aplikasi seluler yang merekomendasikan tempat wisata di Indonesia. Capstone Bangkit, backend dan API oleh saya.',
     'garasi-inspeksi': 'Situs web untuk layanan inspeksi dan perawatan kendaraan.',
     jobless: 'Landing page bursa kerja jarak jauh, dipotong dari desain Figma.',
